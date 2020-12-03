@@ -1,0 +1,8 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    výpis dat z pole:<br>
+    {% for key in array %}
+        <div class="lichy">{{key}}</div> <br>
+    {% endfor %}
+{% endblock %}

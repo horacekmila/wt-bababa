@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    Uživatelé<br>
+    {% for user in userArray %}
+        {% if loop.index is odd %}
+        <div class="lichy">{{user.firstname}} {{user.surname}}</div><br>
+        {% else %}
+        <div class="sudy">{{user.firstname}} {{user.surname}}</div><br>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
